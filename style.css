@@ -1,0 +1,216 @@
+/* global style setting */
+body {
+  background-color: rgb(253, 253, 251);
+  margin: 0px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+
+/* -------------------------------------------------------- */
+/* individual tag style setting */
+header {
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+
+  background-color: #bcaaa4;
+  margin: 0px;
+  padding: 25px;
+  border-bottom: 1px solid gray;
+}
+
+.navbar {
+  list-style: none;
+  color: white;
+
+  margin: 0px;
+  padding: 10px;
+  border-bottom: 1px solid gray;
+  background-color: #795548;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#left-side .sidebar {
+  list-style: none;
+
+  margin: 0px;
+  padding: 10px;
+}
+#left-side .sidebar li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dotted gray;
+}
+#left-side .sidebar li a {
+  color: black;
+}
+#left.image {
+  padding-bottom: 10px;
+  border-bottom: 1px dotted gray;
+}
+
+section {
+  margin: 0px;
+  padding: 10px;
+}
+
+#right-side {
+  margin: 0px;
+  padding: 10px;
+}
+.side-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 10px;
+
+  width: 100%;
+  height: 400px;
+  background-color: #e0e0e0;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+
+  margin: 0px;
+  padding: 10px;
+  border-top: 1px solid gray;
+}
+.mean-text {
+  margin-top: 10px;
+}
+/* -------------------------------------------------------- */
+
+/* -------------------------------------------------------- */
+/* hover setting */
+.sidebar li:hover {
+  background-color: #aeaeae;
+}
+.navbar a:hover {
+  text-decoration: underline;
+}
+.side-image:hover {
+  background-color: #757575;
+}
+#scroll-up:hover {
+  opacity: 100%;
+}
+
+/* -------------------------------------------------------- */
+
+/* -------------------------------------------------------- */
+/* grid container setting */
+.grid {
+  max-width: 90%;
+  margin: auto;
+  display: grid;
+
+  /* grid area */
+  grid-template-areas: 
+    "header header header"
+    "  nav   nav    nav  "
+    "a-side  main  b-side"
+    "   .      .      .  "
+    "footer footer footer";
+
+  /* grid column setting */
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+/* grid items setting */
+header { grid-area: header; }
+nav { grid-area: nav; }
+section { grid-area: main; }
+#left-side {
+  grid-area: a-side;
+
+  /* style setting */
+  border-right: 1px solid gray;
+}
+#right-side {
+  grid-area: b-side;
+
+  /* style setting */
+  border-left: 1px solid gray;
+}
+footer { grid-area: footer; }
+/* -------------------------------------------------------- */
+
+/* -------------------------------------------------------- */
+/* button style setting */
+#scroll-up {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: #795548;
+
+  font-size: 25px;
+  color: white;
+  opacity: 50%;
+}
+
+#day-night {
+  position: absolute;
+  bottom: 59px;
+  right: 5px;
+  color: white;
+  text-align: center;
+
+  width: 70px;
+  height: 30px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 9px #888;
+  background-color: #795548;
+}
+#day-night:hover {
+  background-color: #79554880;
+}
+#day-night:active {
+  background-color: #79554880;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+/* -------------------------------------------------------- */
+
+/* -------------------------------------------------------- */
+/* media query setting */
+@media (max-width: 1000px) {
+  .grid {
+    max-width: 100%;
+  }
+}
+@media (max-width: 830px) {
+  section {
+    grid-column: 2 / 4;
+  }
+  #right-side {
+    display: none;
+  }
+  @media (max-width: 600px){
+    section {
+      grid-column: 1 / 4;
+    }
+    aside {
+      display: none;
+    }
+  }
+}
+/* -------------------------------------------------------- */

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <script src="script.js" defer></script>
+  <title>Main Page</title>
+</head>
+
+<body>
+  <main class="grid">
+    <!-- header line -->
+    <header>
+      <h1 class="border-b">
+        <a href="#" rel="noopener noreferrer">+ Main Page +</a>
+      </h1>
+      <button id="day-night" onclick="setColor()">Night</button>
+    </header>
+
+    <!-- navigation line -->
+    <nav>
+      <ul class="navbar border-b">
+        <li><a href="#">Menu1</a></li>
+        <li>|</li>
+        <li><a href="#">Menu2</a></li>
+        <li>|</li>
+        <li><a href="#">Menu3</a></li>
+      </ul>
+    </nav>
+
+    <!-- left side bar -->
+    <aside id="left-side" class="border-r">
+      <ul class="sidebar">
+        <li class="border-b"><a href="https://chanwoo-git.github.io/Grid-layout-practice/">원시 웹</a></li>
+        <li class="border-b"><a href="#">Page2</a></li>
+        <li class="border-b"><a href="#">Page3</a></li>
+        <li class="border-b"><a href="#">Page4</a></li>
+      </ul>
+      <img id="left" class="image border-b" src="fudle.gif" alt="귀여운 푸들푸들" width="90%">
+      <img id="left" class="image border-b" src="egg.gif" alt="에그머니나" width="90%">
+    </aside>
+
+    <!-- article section -->
+    <section>
+      <article class="text-box1">
+        <h2>여기는 본문 내용입니다.</h2>
+        <hr>
+        <p>이 페이지는 별거는 아니고 그냥 그리드를 배운김에 "한번 써먹어 보자!" 라는 생각이 들어서 만들어 보게 되었습니다. 그리고 이왕 만드는거 "이제 레이아웃 짜는 연습도 해보자!" 싶어서 만들고
+          있지요. 말 그대로 이 페이지는 제가 주절대는것 말고는 아무 내용이 없습니다. 근데 적을 내용은 많지 않은데 채워야 하는 문단은 아직 2개나 남아있죠. 앞으로 무슨 내용을 적어야 할 지 모르겠지만
+          암튼 이번 문단은 여기서 줄이죠.</p>
+      </article>
+      <article class="text-box2">
+        <h2>두번째 본문입니다만, 문제라도?</h2>
+        <hr>
+        <p>아무래도 레이아웃을 처음 짜는거다보니 아무것도 몰라서 인터넷이 일단 찾아봤죠. 찾아보니까 정말 많은 레이아웃 형태가 있더군요. 그 중 가장 마음에 드는 레이아웃을 골라 봤습니다. 이 글을 적고있는
+          지금은 제가 어떻게 레이아웃을 구성할지 아직 생각만 하고 있는 상태입니다. 아마 이 HTML 파일의 본문을 다 채우고 나면 조금씩 CSS 를 이용해서 작업을 시작하겠죠. 이미지도 하나 넣으면
+          그럴듯한 페이지가 나올 것 같은데 어떻게 생각하시나요? 뭐 무슨말을 하셔도 이미 저는 만들었을 것이고 어차피 넣을거라서 딱히 상관은 없습니다. 두번째는 여기까지 입니다.</p>
+      </article>
+      <article class="text-box3">
+        <h2>세번째 입니다.</h2>
+        <hr>
+        <p>이번 글은 부제를 한번 달아볼까 싶습니다. 계속 h2 태그를 사용해서 본문의 제목을 표시하게 되니까 뭔가 페이지가 단조로워질것같은 느낌(?)이 들어서 그렇습니다. 그럼 한번 부제를 달아보도록
+          하겠습니다.</p>
+        <h3>부제입니다.</h3>
+        <P>네, 딱히 별거 아닙니다. "그냥 h3 태그를 한번 써보고싶었다."랄까요. 굉장히 단순한 이유죠. 혼자 주저리주저리 수다떠는것 같지만 사실 맞습니다. 이 본문들을 채울 내용들을 어디서 긁어와야할지
+          생각이 안나거든요. 그리고 이 페이지의 컨셉도 그냥 '그리드를 배웠으니 심심해서 짜보는 레이아웃.' 이라는 느낌이기 때문에 딱히 뭔가 엄청나고 굉장한 이유가 있어서 하는것은 아닙니다. 뭐 굳이
+          플래그를 세우자면 "몇년 후, 그때 그 연습이 이렇게 영향을 끼칠지 몰랐다.." 라던지 "아, 제가 그 시절에 심심풀이로 했던 레이아웃 구성 연습덕분에 이 자리까지 오게 되었습니다." 라던지 뭐
+          생각나는 멘트는 많지만 글을 적으면서 점점 길어지는게 보이니까 이만 줄이겠습니다. 이제 CSS 코드를 짜야하거든요. 여기까지 읽으셨다면, 정말 할 일이 없으신가 보군요? 혹시 저랑 같이 코딩한번
+          해보지 않으시렵니까? 이 페이지가 누구누구에게 보일지는 모르겠는데 footer 라인에 이메일을 적어놓긴 할 겁니다. 관심있으면 연락주시길. 그럼 이만!★</P>
+      </article>
+    </section>
+
+    <!-- right side bar -->
+    <aside id="right-side" class="border-l">
+      <div class="side-image">
+        <div>content1</div>
+      </div>
+      <hr>
+      <div class="side-image">
+        <div>content2</div>
+      </div>
+    </aside>
+
+    <!-- footer line -->
+    <footer class="border-t">
+      <div>여기는 footer 라인입니다.</div>
+      <div>이 페이지는 서울우유의 협찬을 받지는 않고 그냥 만들 때 마시고 있었다구요.</div>
+      <div>그리고 그럴듯 한 텍스트를 넣어야 할 것 같으니 이 문장 아래에 넣여야지</div>
+      <div class="mean-text">
+        <div>e-mail : cksdn164@gmail.com</div>
+        <div>ⓒ 2021 CHAN-WOO, All rights reserved.</div>
+      </div>
+    </footer>
+
+    <!-- 그냥 화살표 버튼 아무 기능도 없음.. 아직은.. -->
+    <input type="button" value="▲" id="scroll-up" onclick="console.log(event);">
+  </main>
+</body>
+
+</html>
